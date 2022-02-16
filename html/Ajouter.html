@@ -10,8 +10,7 @@
 </head>
 <body>
 <h2 class="text-center">Ajouter produits</h2>
-<form action="../php/Validation.php" method="post" style="margin-left: 200px;">
-   <div>
+<form action="../php/Validation.php" method="post">
       <div class="mb-3 mt-3">
          <label for="code" class="form-label">Code:</label>
          <input type="text" class="form-control" id="code" placeholder="Enter code" name="code">
@@ -32,10 +31,14 @@
          <label for="date" class="form-label">Date:</label>
          <input type="text" class="form-control" id="date" placeholder="Enter date" name="date">
       </div>
-      <button type="submit" class="btn btn-outline-primary-lg">Effacer</button>
-      <button type="reset" class="btn btn-light">Validation</button>
+   <div class="row">
+      <div class="col">
+         <button type="reset" class="btn btn-outline-primary-lg" name="reset">Effacer</button>
+      </div>
+      <div class="col">
+         <button type="submit" class="btn btn-light" name="submit">Validation</button>
+      </div>
    </div>
-
 </form>
 
 </body>
